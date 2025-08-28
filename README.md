@@ -1,2 +1,2 @@
-# cosmos-sync
-A daemon that synchronizes Cosmos-SDK based chain data into relational database for the IBC Explorer backend
+# ibc-explorer-sync
+A daemon that synchronizes on-chain data of Cosmos-SDK based chains into a relational database
