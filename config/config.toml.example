@@ -1,0 +1,21 @@
+[database]
+node_uri= "mongodb://<username>:<password>@<host>:<port>/?connect=direct&authSource=<database>"
+database= "<database_name>"
+
+[server]
+node_urls="https://evmos-rpc.lavenderfive.com:443,https://evmos-rpc.polkachu.com:443,https://rpc.evmos.silentvalidator.com:443,https://evmos.rpc.stakin-nodes.com:443,https://rpc-evmos.architectnodes.com:443,https://evmos-rpc.publicnode.com:443,https://rpc-evmos-01.stakeflow.io:443,https://evmos-rpc.theamsolutions.info:443,https://evmos-rpc.w3coins.io:443,https://evmos-rpc.stake-town.com:443,https://evmos.rpc.liveraven.net:443,https://evmos-mainnet.rpc.stakevillage.net:443,https://rpc.evmos.validatus.com:443,https://rpc.evmos.citizenweb3.com:443"
+worker_num_create_task=1
+worker_num_execute_task=30
+worker_max_sleep_time=120
+block_num_per_worker_handle=100
+max_connection_num=100
+init_connection_num=5
+bech32_acc_prefix="evmos"
+chain_id="evmos_9001-2"
+chain="evmos"
+chain_block_interval=5
+behind_block_num=0
+promethous_port=9090
+support_types="transfer,recv_packet,timeout_packet,acknowledge_packet,update_client,channel_open_confirm"
+ignore_ibc_header=false
+use_node_urls=true
