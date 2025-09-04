@@ -1,0 +1,22 @@
+[database]
+node_uri= "mongodb://<username>:<password>@<host>:<port>/?connect=direct&authSource=<database>"
+database= "<database_name>"
+
+[server]
+node_urls="https://injective-rpc.polkachu.com:443,https://injective-rpc.publicnode.com:443,https://rpc.injective.bronbro.io:443,https://rpc-injective.ecostake.com:443"
+worker_num_create_task=1
+worker_num_execute_task=30
+worker_max_sleep_time=120
+block_num_per_worker_handle=100
+worker_num_tx_result_in_block = 1
+max_connection_num=100
+init_connection_num=5
+bech32_acc_prefix="inj"
+chain_id="injective-1"
+chain="injective"
+chain_block_interval=5
+behind_block_num=0
+promethous_port=9090
+support_types="transfer,recv_packet,timeout_packet,acknowledge_packet,update_client,channel_open_confirm"
+ignore_ibc_header=false
+use_node_urls=true
