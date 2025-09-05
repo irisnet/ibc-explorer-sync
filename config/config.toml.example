@@ -1,0 +1,39 @@
+[database]
+# MongoDB connection URI
+node_uri = "mongodb://<username>:<password>@<host>:<port>/?connect=direct&authSource=<database>"
+# Database name
+database= "<database_name>"
+
+[server]
+# RPC node URLs, comma separated for multiple nodes
+node_urls = "https://rpc.uptick.nodestake.top:443"
+# Number of task creation workers
+worker_num_create_task = 1
+# Number of task execution workers
+worker_num_execute_task = 30
+# Maximum worker sleep time in seconds
+worker_max_sleep_time = 120
+# Number of blocks per sync task
+block_num_per_worker_handle = 100
+# Maximum number of connections in the pool
+max_connection_num = 100
+# Initial number of connections in the pool
+init_connection_num = 5
+# Chain-specific Bech32 address prefix
+bech32_acc_prefix = "uptick"
+# Chain ID
+chain_id = "uptick_117-1"
+# Chain name for collection naming
+chain = "uptick"
+# Block interval in seconds
+chain_block_interval = 5
+# Number of blocks to wait when retrying failed tasks
+behind_block_num = 0
+# Prometheus metrics port
+promethous_port = 9090
+# Comma-separated list of supported message types
+support_types = "transfer,recv_packet,timeout_packet,acknowledge_packet,update_client,channel_open_confirm"
+# Whether to ignore IBC header info
+ignore_ibc_header = true
+# Use configured node URLs (true) or fetch from GitHub (false)
+use_node_urls = true
